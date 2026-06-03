@@ -1,2 +1,3 @@
-#Exclude the diagrams folder
+#Exclude the diagrams folder adn DS_Store 
 diagrams/
+.DS_Store
