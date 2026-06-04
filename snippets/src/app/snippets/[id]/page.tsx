@@ -18,11 +18,12 @@ export default async function SnippetShowPage(props: SnippetShowPageProps) {
     where: { id: parseInt(id) },
   });
 
-  const deleteSnippetAction = deleteSnippet.bind(null, snippet?.id);
-
   if (!snippet) {
     return notFound();
   }
+
+  const deleteSnippetAction = deleteSnippet.bind(null, snippet.id);
+
   return (
     <div>
       <div className="flex m-4 justify-between items-center">
