@@ -23,13 +23,4 @@ export const {
       clientSecret: GITHUB_CLIENT_SECRET,
     }),
   ],
-  callbacks: {
-    // TODO: Usually not needed. Only to fix a bug. Return and see if this one is actually needed.
-    async session({ session, user }: any) {
-      if (session && user) {
-        session.user.id = user.id;
-      }
-      return session;
-    },
-  },
 });
