@@ -5,7 +5,6 @@ import PostShowLoading from "@/components/posts/post-show-loading";
 import CommentList from "@/components/comments/comment-list";
 import CommentCreateForm from "@/components/comments/comment-create-form";
 import paths from "@/paths";
-import { fetchCommentsByPostId } from "@/db/queries/comments";
 
 interface PostShowPageProps {
   params: Promise<{
